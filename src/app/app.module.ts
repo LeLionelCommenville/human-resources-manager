@@ -6,7 +6,8 @@ import { AppComponent } from './app.component';
 import { EmployeeService } from './employee.service';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatToolbarModule} from '@angular/material/toolbar';
-
+import {MatGridListModule} from '@angular/material/grid-list';
+import { FlexLayoutModule } from '@angular/flex-layout';
 
 @NgModule({
   declarations: [
@@ -18,6 +19,9 @@ import {MatToolbarModule} from '@angular/material/toolbar';
     BrowserAnimationsModule,
     MatCardModule,
     MatToolbarModule,
+    MatGridListModule,
+    FlexLayoutModule
+
   ],
   providers: [EmployeeService],
   bootstrap: [AppComponent]

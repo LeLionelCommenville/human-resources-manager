@@ -1,14 +1,17 @@
 <mat-toolbar>
 
 </mat-toolbar>
-<div *ngFor="let employee of employees">
-  <mat-card>
-    <mat-card-title>
-      {{employee?.name}}
-    </mat-card-title>
-    <img mat-card-image src="{{employee?.imageUrl}}" >	
-    <mat-card-content>
-      {{employee?.jobTitle}}
-    </mat-card-content>
-  </mat-card>
+<div fxLayout="row wrap" fxLayoutGap="16px grid" >
+  <div fxFlex="25%" fxFlex.xs="100%" fxFlex.sm="33%" *ngFor="let employee of employees">  
+    <mat-card>
+      <mat-card-title>
+        {{employee?.name}}
+      </mat-card-title>
+      <img mat-card-image src="{{employee?.imageUrl}}" >	
+      <mat-card-content>
+        {{employee?.jobTitle}}
+      </mat-card-content>
+    </mat-card>  
+  </div>
 </div>
+
